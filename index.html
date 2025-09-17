@@ -1,1 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jharkhand Certificate Verification System</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">
+                    <span class="material-icons">verified</span>
+                    <h1>Jharkhand Edu-Verify</h1>
+                </div>
+                <nav class="header__nav">
+                    <button class="btn btn--outline header__nav-btn" data-section="home">Home</button>
+                    <button class="btn btn--outline header__nav-btn" data-section="verify">Verify</button>
+                    <button class="btn btn--outline header__nav-btn" data-section="institutions">Institutions</button>
+                    <button class="btn btn--outline header__nav-btn" data-section="admin">Admin</button>
+                    <button class="btn btn--primary">Login</button>
+                </nav>
+            </div>
+        </div>
+    </header>
 
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Home Section -->
+        <section id="home" class="section section--home">
+            <!-- Hero Section -->
+            <div class="hero">
+                <div class="container">
+                    <div class="hero__content">
+                        <div class="hero__text">
+                            <h1 class="hero__title">Secure Digital Certificate Verification for Jharkhand</h1>
+                            <p class="hero__subtitle">AI-powered fake degree detection system protecting academic integrity across the state's educational institutions</p>
+                            <div class="hero__actions">
+                                <button class="btn btn--primary btn--lg" data-action="start-verification">
+                                    <span class="material-icons">upload_file</span>
+                                    Start Verification
+                                </button>
+                                <button class="btn btn--outline btn--lg" data-action="learn-more">
+                                    <span class="material-icons">info</span>
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                        <div class="hero__visual">
+                            <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/e85f91b3f53130b01d3b3a58f0db024f/f51f28e3-2cd6-4efa-a734-343824c055b0/2c5673b4.png" alt="Verification System Architecture" class="hero__image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Statistics Section -->
+            <div class="stats">
+                <div class="container">
+                    <div class="stats__grid">
+                        <div class="stat-card">
+                            <div class="stat-card__icon">
+                                <span class="material-icons">verified_user</span>
+                            </div>
+                            <div class="stat-card__content">
+                                <h3 class="stat-card__number">150,000+</h3>
+                                <p class="stat-card__label">Verifications Completed</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__icon">
+                                <span class="material-icons">security</span>
+                            </div>
+                            <div class="stat-card__content">
+                                <h3 class="stat-card__number">96.8%</h3>
+                                <p class="stat-card__label">Accuracy Rate</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__icon">
+                                <span class="material-icons">speed</span>
+                            </div>
+                            <div class="stat-card__content">
+                                <h3 class="stat-card__number">2.3s</h3>
+                                <p class="stat-card__label">Average Processing Time</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__icon">
+                                <span class="material-icons">school</span>
+                            </div>
+                            <div class="stat-card__content">
+                                <h3 class="stat-card__number">145</h3>
+                                <p class="stat-card__label">Registered Institutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Role Selection -->
+            <div class="role-selection">
+                <div class="container">
+                    <h2 class="section__title">Choose Your Role</h2>
+                    <div class="role-cards">
+                        <div class="role-card" data-role="employer">
+                            <div class="role-card__icon">
+                                <span class="material-icons">business</span>
+                            </div>
+                            <h3>Employer</h3>
+                            <p>Verify employee credentials and academic certificates</p>
+                            <button class="btn btn--primary">Get Started</button>
+                        </div>
+                        <div class="role-card" data-role="institution">
+                            <div class="role-card__icon">
+                                <span class="material-icons">account_balance</span>
+                            </div>
+                            <h3>Institution</h3>
+                            <p>Manage and register your certificates in the system</p>
+                            <button class="btn btn--primary">Get Started</button>
+                        </div>
+                        <div class="role-card" data-role="government">
+                            <div class="role-card__icon">
+                                <span class="material-icons">gavel</span>
+                            </div>
+                            <h3>Government Agency</h3>
+                            <p>Verify certificates for schemes and admissions</p>
+                            <button class="btn btn--primary">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comparison Chart -->
+            <div class="comparison">
+                <div class="container">
+                    <h2 class="section__title">System Improvements</h2>
+                    <div class="comparison__content">
+                        <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/e85f91b3f53130b01d3b3a58f0db024f/5ff373a8-6290-4c59-87b3-52e7e6743ad7/2c5673b4.png" alt="Current vs Proposed System" class="comparison__chart">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Verification Section -->
+        <section id="verify" class="section section--verify hidden">
+            <div class="container">
+                <h2 class="section__title">Certificate Verification</h2>
+                
+                <!-- Upload Interface -->
+                <div class="upload-section">
+                    <div class="upload-card card">
+                        <div class="card__body">
+                            <div class="upload-area" id="uploadArea">
+                                <div class="upload-area__content">
+                                    <span class="material-icons upload-area__icon">cloud_upload</span>
+                                    <h3>Drop certificate here or click to browse</h3>
+                                    <p>Supports PDF, JPG, PNG files up to 10MB</p>
+                                    <input type="file" id="fileInput" accept=".pdf,.jpg,.jpeg,.png" hidden>
+                                    <button class="btn btn--outline" onclick="document.getElementById('fileInput').click()">
+                                        Browse Files
+                                    </button>
+                                </div>
+                                <div class="upload-progress hidden" id="uploadProgress">
+                                    <div class="progress-bar">
+                                        <div class="progress-bar__fill"></div>
+                                    </div>
+                                    <p class="upload-status">Processing document...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OCR Preview -->
+                <div class="ocr-preview card hidden" id="ocrPreview">
+                    <div class="card__header">
+                        <h3>OCR Extraction Results</h3>
+                    </div>
+                    <div class="card__body">
+                        <div class="ocr-content">
+                            <div class="ocr-field">
+                                <label>Student Name:</label>
+                                <span id="extractedName">-</span>
+                            </div>
+                            <div class="ocr-field">
+                                <label>Roll Number:</label>
+                                <span id="extractedRoll">-</span>
+                            </div>
+                            <div class="ocr-field">
+                                <label>Institution:</label>
+                                <span id="extractedInstitution">-</span>
+                            </div>
+                            <div class="ocr-field">
+                                <label>Degree:</label>
+                                <span id="extractedDegree">-</span>
+                            </div>
+                            <div class="ocr-field">
+                                <label>Year:</label>
+                                <span id="extractedYear">-</span>
+                            </div>
+                        </div>
+                        <button class="btn btn--primary" id="verifyBtn">Start Verification</button>
+                    </div>
+                </div>
+
+                <!-- Verification Results -->
+                <div class="verification-results card hidden" id="verificationResults">
+                    <div class="card__header">
+                        <h3>Verification Results</h3>
+                    </div>
+                    <div class="card__body">
+                        <div class="verification-summary">
+                            <div class="risk-score" id="riskScore">
+                                <div class="risk-score__circle">
+                                    <span class="risk-score__number">-</span>
+                                </div>
+                                <div class="risk-score__label">Risk Score</div>
+                            </div>
+                            <div class="verification-status" id="verificationStatus">
+                                <span class="status status--info">Processing...</span>
+                            </div>
+                        </div>
+                        <div class="verification-details">
+                            <div class="detail-item">
+                                <span class="material-icons">document_scanner</span>
+                                <span>OCR Analysis</span>
+                                <span class="status status--success">Completed</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="material-icons">psychology</span>
+                                <span>AI Fraud Detection</span>
+                                <span class="status status--success">Completed</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="material-icons">storage</span>
+                                <span>Database Verification</span>
+                                <span class="status status--success">Completed</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="material-icons">verified</span>
+                                <span>Blockchain Check</span>
+                                <span class="status status--success">Completed</span>
+                            </div>
+                        </div>
+                        <div class="verification-actions">
+                            <button class="btn btn--primary">Download Report</button>
+                            <button class="btn btn--outline">Flag Suspicious</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- QR Code Scanner -->
+                <div class="qr-scanner card">
+                    <div class="card__header">
+                        <h3>QR Code Verification</h3>
+                    </div>
+                    <div class="card__body">
+                        <div class="qr-scanner__area">
+                            <div class="qr-frame">
+                                <div class="qr-corners"></div>
+                                <p>Position QR code within the frame</p>
+                            </div>
+                            <button class="btn btn--primary">
+                                <span class="material-icons">qr_code_scanner</span>
+                                Start Scanner
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Institutions Section -->
+        <section id="institutions" class="section section--institutions hidden">
+            <div class="container">
+                <h2 class="section__title">Institution Management</h2>
+                
+                <div class="institutions-grid">
+                    <div class="institution-stats card">
+                        <div class="card__body">
+                            <h3>Registered Institutions</h3>
+                            <div class="institution-list" id="institutionList">
+                                <!-- Populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bulk-upload card">
+                        <div class="card__header">
+                            <h3>Bulk Certificate Upload</h3>
+                        </div>
+                        <div class="card__body">
+                            <div class="upload-area upload-area--bulk">
+                                <span class="material-icons">cloud_upload</span>
+                                <p>Upload CSV file with certificate data</p>
+                                <button class="btn btn--primary">Choose File</button>
+                            </div>
+                            <div class="upload-template">
+                                <button class="btn btn--outline">Download Template</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Admin Section -->
+        <section id="admin" class="section section--admin hidden">
+            <div class="container">
+                <h2 class="section__title">Admin Dashboard</h2>
+                
+                <div class="admin-grid">
+                    <!-- Fraud Patterns Chart -->
+                    <div class="chart-card card">
+                        <div class="card__header">
+                            <h3>Fraud Detection Patterns</h3>
+                        </div>
+                        <div class="card__body">
+                            <div class="chart-container" style="position: relative; height: 300px;">
+                                <canvas id="fraudChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Monthly Verifications Chart -->
+                    <div class="chart-card card">
+                        <div class="card__header">
+                            <h3>Monthly Verifications</h3>
+                        </div>
+                        <div class="card__body">
+                            <div class="chart-container" style="position: relative; height: 300px;">
+                                <canvas id="monthlyChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- System Analytics -->
+                    <div class="analytics-card card">
+                        <div class="card__header">
+                            <h3>System Analytics</h3>
+                        </div>
+                        <div class="card__body">
+                            <div class="analytics-grid">
+                                <div class="analytics-item">
+                                    <span class="analytics-value">12,500</span>
+                                    <span class="analytics-label">Fraud Detected</span>
+                                </div>
+                                <div class="analytics-item">
+                                    <span class="analytics-value">18.5%</span>
+                                    <span class="analytics-label">Monthly Growth</span>
+                                </div>
+                                <div class="analytics-item">
+                                    <span class="analytics-value">145</span>
+                                    <span class="analytics-label">Active Institutions</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Recent Activity -->
+                    <div class="activity-card card">
+                        <div class="card__header">
+                            <h3>Recent Activity</h3>
+                        </div>
+                        <div class="card__body">
+                            <div class="activity-list" id="activityList">
+                                <!-- Populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p>&copy; 2025 Government of Jharkhand. All rights reserved.</p>
+                <div class="footer__links">
+                    <a href="#" target="_blank">Privacy Policy</a>
+                    <a href="#" target="_blank">Terms of Service</a>
+                    <a href="#" target="_blank">Support</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
