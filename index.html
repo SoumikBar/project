@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jharkhand Certificate Verification System</title>
+    <meta name="description" content="Official Jharkhand Certificate Verification System for validating educational degrees online.">
+    <meta name="keywords" content="Jharkhand, Certificate Verification, Degree, Education, Validation">
+    <meta property="og:title" content="Jharkhand Certificate Verification System">
+    <meta property="og:description" content="Verify educational certificates online with Jharkhand Edu-Verify.">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -17,12 +21,14 @@
                     <span class="material-icons">verified</span>
                     <h1>Jharkhand Edu-Verify</h1>
                 </div>
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                <span class="material-icons">menu</span>
+                </button>
                 <nav class="header__nav">
-                    <button class="btn btn--outline header__nav-btn" data-section="home">Home</button>
-                    <button class="btn btn--outline header__nav-btn" data-section="verify">Verify</button>
-                    <button class="btn btn--outline header__nav-btn" data-section="institutions">Institutions</button>
-                    <button class="btn btn--outline header__nav-btn" data-section="admin">Admin</button>
-                    <button class="btn btn--primary">Login</button>
+                    <nav class="header__nav" role="navigation" aria-label="Main navigation">
+                    <a href="#home" class="btn btn--outline header__nav-btn" role="button">Home</a>
+                    <a href="#verify" class="btn btn--outline header__nav-btn" role="button">Verify</a>
+                    <a href="#about" class="btn btn--outline header__nav-btn" role="button">About</a>
                 </nav>
             </div>
         </div>
